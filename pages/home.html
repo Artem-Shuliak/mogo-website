@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/style.css">
+
+	<meta 
+    name="viewport" 
+    content="width=device-width, 
+             initial-scale=1.0, 
+             maximum-scale=1.0, 
+             user-scalable=no"
+>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<script src="../javascript/jquery-3.1.1.min.js"></script>
+	<script>
+		// $(document).ready(function () {
+		// 	console.log();
+		// 	$('.nav-right a').css('color' , 'red');
+		// });
+
+		$(document).ready(init);
+			function init () {
+				console.log('init');
+
+				$('.js-btn-open').click(function (event) {
+					event.preventDefault();
+
+					$('.nav-right').addClass('is-active');
+				});	
+
+
+
+				$('.js-btn-open').click(function (event) {
+					event.preventDefault();
+
+					$('body').addClass('pos-fixed');
+				});	
+
+				$('.js-btn-closed').click(function (event) {
+					event.preventDefault();
+
+					$('body').removeClass('pos-fixed');
+				});	
+
+
+
+				$('.js-btn-closed').click(function (event) {
+					event.preventDefault();
+
+					$('.nav-right').removeClass('is-active');
+				});	
+
+				$('.btn-1').click(function (event) {
+					event.preventDefault();
+
+					$('.content-1').toggleClass('open');
+				});	
+
+				$('.btn-2').click(function (event) {
+					event.preventDefault();
+
+					$('.content-2').toggleClass('open');
+				});				
+
+				$('.btn-3').click(function (event) {
+					event.preventDefault();
+
+					$('.content-3').toggleClass('open');
+				});		
+
+				$('.btn-1').click(function (event) {
+					event.preventDefault();
+
+					$('.toggle-1').toggleClass('rotate');
+				});	
+
+				$('.btn-2').click(function (event) {
+					event.preventDefault();
+
+					$('.toggle-2').toggleClass('rotate');
+				});	
+
+				$('.btn-3').click(function (event) {
+					event.preventDefault();
+
+					$('.toggle-3').toggleClass('rotate');
+				});	
+
+				// $('a[href^="#"]').on('click', function(event){     
+    // 				event.preventDefault();
+    				
+    // 				$('html,body').animate({
+    // 					'scrollTop' : target.offset().top 
+    // 				}, 1000, 'swing');
+				// });
+
+					
+
+				// 					$(function() {
+				//    $('a[href="#about"]').click(function(e) {
+				//        e.preventDefault();
+				//        var targetoffset = $('a[name="about"]').offset().top; 
+				//        $('body').animate(
+				//             {scrollTop: targetoffset}, 
+				//             500
+				//        );
+				//    }); 
+				// });
+
+
+				// 					$(function() {
+				//    $('a[href="#service"]').click(function(e) {
+				//        e.preventDefault();
+				//        var targetoffset = $('a[name="service"]').offset().top; 
+				//        $('body').animate(
+				//             {scrollTop: targetoffset}, 
+				//             500
+				//        );
+				//    }); 
+				// });
+
+
+
+				// 					$(function() {
+				//    $('a[href="#work"]').click(function(e) {
+				//        e.preventDefault();
+				//        var targetoffset = $('a[name="work"]').offset().top; 
+				//        $('body').animate(
+				//             {scrollTop: targetoffset}, 
+				//             500
+				//        );
+				//    }); 
+				// });
+
+
+				// 					$(function() {
+				//    $('a[href="#blog"]').click(function(e) {
+				//        e.preventDefault();
+				//        var targetoffset = $('a[name="blog"]').offset().top; 
+				//        $('body').animate(
+				//             {scrollTop: targetoffset}, 
+				//             500
+				//        );
+				//    }); 
+				// });
+
+
+
+				// 					$(function() {
+				//    $('a[href="#contact"]').click(function(e) {
+				//        e.preventDefault();
+				//        var targetoffset = $('a[name="contact"]').offset().top; 
+				//        $('body').animate(
+				//             {scrollTop: targetoffset}, 
+				//        );
+				//    }); 
+				// });
+			}		
+	</script>
+
+
+</head>
+<body>
+	<div class="header">
+		<div class="header-bg">
+		<div class="header-gradient"></div>
+			<div class="main-container">
+
+
+				<div class="nav clearfix">
+
+			
+				<div class="menu-btn"><img class="js-btn-open" src="../pic/menu-btn.svg" alt="menu button"></div>
+
+					<div class="nav-left">
+						<a href="#">MoGo</a>
+					</div>
+					<div class="nav-right">
+
+				
+					<div class="closing-btn"><img class="js-btn-closed" src="../pic/closing-btn.svg" alt=""></div>
+
+						<a href="#about" class="margin-top">About</a>
+						<a href="#service">Service</a>
+						<a href="#work">Work</a>
+						<a href="#blog">Blog</a>
+						<a href="#contact">Contact</a>
+						<a href="#"><img src="../pic/shopping-cart.png" alt="shop"></a>
+						<a href="#"><img src="../pic/magnifying-glass.png" alt="find"></a>
+					</div>
+				</div>
+
+				<div class="nav-content">
+					<p>Creative Template</p>
+					<h1>Welcome <br> to MoGo</h1>
+					<div class="line-1"></div>
+					<div class="learn-more"><a href="#">learn more</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- <a name="about"></a> -->
+<div id="about"></div>
+
+	<div class="about">
+		<div class="about-bg">
+			<div class="main-container">
+				<p>What we do</p>
+				<h1>Story about us</h1>
+				<div class="line-2"></div>
+				<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<div class="about-img">
+
+					<div class="container">
+						<img src="../img/about-img-1.png" alt="image 1">
+					<div class="overlay">
+						<div class="text">
+							<img src="../pic/about-hover-img.png" alt="hover image">
+							<p>super team</p>
+						</div>
+					</div>
+					<div class="square-after"></div>
+					</div>
+
+					<div class="container">
+						<img src="../img/about-img-2.png" alt="image 2">
+					<div class="overlay">
+						<div class="text">
+							<img src="../pic/about-hover-img.png" alt="hover image">
+							<p>super team</p>
+						</div>
+					</div>
+					<div class="square-after"></div>
+					</div>
+
+					<div class="container">
+						<img src="../img/about-img-3.png" alt="image 3">
+					<div class="overlay">
+						<div class="text">
+							<img src="../pic/about-hover-img.png" alt="hover image">
+							<p>super team</p>
+						</div>
+					</div>
+					<div class="square-after"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="stats">
+				<div class="column">
+					<h1>42</h1>
+					<p>Web Design Projects</p>
+				</div>
+				<div class="column">
+					<h1>123</h1>
+					<p>happy client</p>
+				</div>
+				<div class="column">
+					<h1>15</h1>
+					<p>award winner</p>
+				</div>
+				<div class="column">
+					<h1>99</h1>
+					<p>cup of coffee</p>
+				</div>
+				<div class="column">
+					<h1>24</h1>
+					<p>members</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- <a name="service"></a> -->
+<div id="service"></div>
+
+	<div class="service">
+		<div class="sevice-bg">
+			<div class="list">
+				<p>We work with</p>
+				<h1>Amazing Services</h1>
+				<div class="line-3"></div>
+				<div class="grid">
+					<div class="row-1">
+						<div class="container clearfix">
+							<div class="left">
+								<img src="../pic/alarm.png" alt="alarm">
+							</div>
+							<div class="right">
+								<div class="title">Photography</div>
+								<div class="description">Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor.</div>
+							</div>
+						</div>
+						<div class="container clearfix">
+							<div class="left">
+								<img src="../pic/line-graph.png" alt="graph">
+							</div>
+							<div class="right">
+								<div class="title">Web Design</div>
+								<div class="description">Ipsum dolor sit amet, consecteturadipiscing 	elit, sed do eiusmod tempor.</div>
+							</div>
+						</div>
+						<div class="container clearfix">
+							<div class="left">
+								<img src="../pic/computer.png" alt="computer">
+							</div>
+							<div class="right">
+								<div class="title">Creativity</div>
+								<div class="description">Dolor sit amet, consectetur adipiscingelit, sed 	do eiusmod tempor.</div>
+							</div>
+						</div>
+						<div class="break-line"></div>
+						<div class="row-2">
+							<div class="container clearfix">
+								<div class="left">
+									<img src="../pic/book.png" alt="book">
+								</div>
+								<div class="right">
+									<div class="title">seo</div>
+									<div class="description">Ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod.</div>
+								</div>
+							</div>
+							<div class="container clearfix">
+								<div class="left">
+									<img src="../pic/home.png" alt="home">
+								</div>
+								<div class="right">
+									<div class="title">Css/Html</div>
+									<div class="description">Lorem dolor sit amet, consecteturadipiscing elit, sed do tempor.</div>
+								</div>
+							</div>
+							<div class="container clearfix">
+								<div class="left">
+									<img src="../pic/qr-code.png" alt="qr code">
+								</div>
+								<div class="right">
+									<div class="title">digital</div>
+									<div class="description">Sit amet, consectetur adipiscing elit,sed do eiusmod tempor.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="devices">
+				<div class="devices-bg">
+					<p>For all devices</p>
+					<h1>Unique design</h1>
+					<div class="line-4"></div>
+					<div class="devices-img">
+						<img class="ipad" src="../img/ipad.png" alt="ipad" width="100%;">
+						<img class="iphone" src="../img/iphone.png" alt="iphone" width="100%">
+					</div>	
+				</div>
+			</div>
+
+			<div class="service-type">
+				<div class="main-container">
+					<p class="first">Service</p>
+					<h1>what we do</h1>
+					<div class="line-5"></div>
+					
+					<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					
+					<div class="service-type-container clearfix">
+						<div class="left">
+							<img class="left-pic" src="../img/service-pic.png" alt="services img">
+						</div>
+
+						<div class="right">
+							<div class="photography">
+								<div class="btn-1 clearfix">
+									<div class="left">
+										<img src="../pic/picture.png" alt="picture">
+										<p>Photography</p>
+									</div>
+
+									<div class="right">
+										<a href="#"><img class="toggle-1" src="../pic/arrow-down.png" alt="arrow down"></a>
+									</div>
+								</div>
+
+								<div class="content-1">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+
+							<div class="creativity">
+								<div class="btn-2 clearfix">
+									<div class="left">
+										<img src="../pic/equalizer.png" alt="picture">
+										<p>Creativity</p>
+									</div>
+
+									<div class="right">
+										<a href="#"><img class="toggle-2" src="../pic/arrow-down.png" alt="arrow down"></a>
+									</div>
+								</div>
+
+								<div class="content-2">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+
+							<div class="web-design">
+								<div class="btn-3 clearfix">
+									<div class="left">
+										<img src="../pic/target.png" alt="picture">
+										<p>Web design</p>
+									</div>
+
+									<div class="right">
+										<a href="#"><img class="toggle-3" src="../pic/arrow-down.png" alt="arrow down"></a>
+									</div>
+								</div>
+
+								<div class="content-3">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="quote">
+			<div class="quote-container">
+				<div class="container clearfix">
+					<div class="left"><img src="../pic/arrow-left.png" alt="arrow left"></div>
+
+						<div class="content">
+							<img class="message-icon" src="../pic/message-icon.png" alt="message icon">
+						
+							<div class="display-right">
+								<p class="lorem-text">“Lorem ipsum dolor sit amet, consectetur adipiscing 	elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 	enim ad minim veniam, quis nostrud exercitation.”</p>
+	
+								<div class="line"></div>
+								<p class="name">Jon Doe</p>
+							</div>
+						</div>
+
+					<div class="right"><img src="../pic/arrow-right.png" alt="arrow right"></div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="team">
+			<div class="team-bg">
+				<div class="main-container">
+					<p class="p-first">Who we are</p>
+					<h1 class="h1-first">Meet our team</h1>
+					<div class="team-line"></div>
+					<p class="p-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+					<div class="team-img">
+					<div class="text-container">
+						<div class="container">
+
+						<div class="translate">
+							<img src="../img/service-img-1.png" alt="team member 1" width="100%;">
+
+							<div class="overlay">
+								<div class="social-media">
+									<img src="../pic/facebook.svg" alt="facebook" onmouseover="this.src='../pic/facebook-white.svg'" onmouseout="this.src='../pic/facebook.svg'">
+									<img src="../pic/twitter.svg" alt="twitter" onmouseover="this.src='../pic/twitter-white.svg'" onmouseout="this.src='../pic/twitter.svg'">
+									<img src="../pic/pinterest.svg" alt="pinterest" onmouseover="this.src='../pic/pinterest-white.svg'" onmouseout="this.src='../pic/pinterest.svg'">
+									<img src="../pic/instagram.svg" alt="instagram" onmouseover="this.src='../pic/instagram-white.svg'" onmouseout="this.src='../pic/instagram.svg'">
+									
+								</div>
+							</div>
+						</div>
+							<div class="square-after"></div>
+						</div>
+							<h1 class="title-after">Matthew Dix</h1>
+							<p class="text-after">Graphic Design</p>
+					</div>
+
+
+					<div class="text-container">
+						<div class="container">
+
+						<div class="translate">
+							<img src="../img/service-img-2.png" alt="team member 1" width="100%;">
+
+							<div class="overlay">
+								<div class="social-media">
+									<img src="../pic/facebook.svg" alt="facebook" onmouseover="this.src='../pic/facebook-white.svg'" onmouseout="this.src='../pic/facebook.svg'">
+									<img src="../pic/twitter.svg" alt="twitter" onmouseover="this.src='../pic/twitter-white.svg'" onmouseout="this.src='../pic/twitter.svg'">
+									<img src="../pic/pinterest.svg" alt="pinterest" onmouseover="this.src='../pic/pinterest-white.svg'" onmouseout="this.src='../pic/pinterest.svg'">
+									<img src="../pic/instagram.svg" alt="instagram" onmouseover="this.src='../pic/instagram-white.svg'" onmouseout="this.src='../pic/instagram.svg'">
+									
+								</div>
+							</div>
+						</div>
+							<div class="square-after"></div>
+						</div>
+							<h1 class="title-after">Christopher Campbell</h1>
+							<p class="text-after">Branding/UX design</p>
+					</div>
+
+
+					<div class="text-container">
+						<div class="container">
+
+						<div class="translate">
+							<img src="../img/service-img-3.png" alt="team member 1" width="100%;">
+
+							<div class="overlay">
+								<div class="social-media">
+									<img src="../pic/facebook.svg" alt="facebook" onmouseover="this.src='../pic/facebook-white.svg'" onmouseout="this.src='../pic/facebook.svg'">
+									<img src="../pic/twitter.svg" alt="twitter" onmouseover="this.src='../pic/twitter-white.svg'" onmouseout="this.src='../pic/twitter.svg'">
+									<img src="../pic/pinterest.svg" alt="pinterest" onmouseover="this.src='../pic/pinterest-white.svg'" onmouseout="this.src='../pic/pinterest.svg'">
+									<img src="../pic/instagram.svg" alt="instagram" onmouseover="this.src='../pic/instagram-white.svg'" onmouseout="this.src='../pic/instagram.svg'">
+									
+								</div>
+							</div>
+						</div>
+							<div class="square-after"></div>
+						</div>
+							<h1 class="title-after">Michael Fertig</h1>
+							<p class="text-after">Developer</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+		<div class="clients">
+			<div class="main-container">
+				<img src="../pic/clients.png" alt="clients">
+			</div>
+		</div>
+	</div>	
+
+<!-- <a name="work"></a> -->
+<div id="work"></div>
+
+	<div class="work">
+		<div class="portfolio">
+			<p class="p-first">What we do</p>
+			<h1 class="h1-first">some of our work</h1>
+			<div class="portfolio-line"></div>
+			<p class="portfolio-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+			<div class="grid-1 clearfix">
+				<div class="left">
+					<div class="left-1"></div>
+					<div class="left-2"></div>
+					<div class="left-3"></div>
+					<div class="left-4"></div>	
+				</div>
+				<div class="right">
+					<div class="right-1"></div>
+				</div>
+
+				<div class="right-2">
+					<div class="right-2"></div>
+					<div class="right-3"></div>
+				</div>
+			</div>
+		</div>
+
+	<div class="quote">
+		<div class="quote-container">
+			<div class="container clearfix">
+				<div class="left"><img src="../pic/arrow-left.png" alt="arrow left"></div>
+					<div class="content">
+						<img class="circle-img" src="../img/circle-img.png" alt="cicrle user image">
+					
+						<div class="display-right">
+							<p class="lorem-text">“Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+
+							<div class="line"></div>
+							<p class="name">Joshua Earle</p>
+						</div>
+					</div>
+				<div class="right"><img src="../pic/arrow-right.png" alt="arrow right"></div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="clients-say">
+		<div class="clients-say-bg">
+			<div class="clients-say-container">
+				<p class="p-first">Happy Clients</p>
+				<h1 class="h1-first">What people say</h1>
+				<div class="clients-say-line"></div>
+
+				<div class="face-grid">
+					<div class="container clearfix">
+						<div class="left">
+							<img src="../img/face-1.png" alt="face 1">
+						</div>
+
+						<div class="right">
+							<h1 class="name">Matthew Dix</h1>
+							<h1 class="job">Graphic Design</h1>
+							<div class="line"></div>
+							<div class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+							</div>
+						</div>
+					</div>
+
+					<div class="container clearfix">
+						<div class="left">
+							<img src="../img/face-2.png" alt="face 2">
+						</div>
+
+						<div class="right">
+							<h1 class="name">Nick Karvounis</h1>
+							<h1 class="job">Graphic Design</h1>
+							<div class="line"></div>
+							<div class="description">
+								Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+							</div>
+						</div>
+					</div>
+
+					<div class="container clearfix">
+						<div class="left">
+							<img src="../img/face-3.png" alt="face 3">
+						</div>
+
+						<div class="right">
+							<h1 class="name">Jaelynn Castillo</h1>
+							<h1 class="job">Graphic Design</h1>
+							<div class="line"></div>
+							<div class="description">
+								Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+							</div>
+						</div>
+					</div>
+
+					<div class="container clearfix">
+						<div class="left">
+							<img src="../img/face-4.png" alt="face 4">
+						</div>
+
+						<div class="right">
+							<h1 class="name">Mike Petrucci</h1>
+							<h1 class="job">Graphic Design</h1>
+							<div class="line"></div>
+							<div class="description">
+								Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+<!-- <a name="blog"></a> -->
+<div id="bog"></div>
+
+	<div class="blog">
+		<div class="main-container">
+			<p class="p-first">Our stories</p>
+			<h1 class="h1-first">Latest blog</h1>
+			<div class="line-first"></div>
+		<div class="blog-img">
+			<div class="container">
+				<div class="image-container">
+					<img src="../img/blog-img-1.png" alt="blog image 1" width="100%">
+					<div class="date">
+						<p class="date-number">15</p>
+						<p class="month">Jan</p>
+					</div>
+				</div>
+
+				<h1 class="h1-after">Lorem ipsum dolor sit amet</h1>
+				<p class="p-after">
+					Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<div class="line-after"></div>
+				<div class="ratings">
+					<div class="views">
+						<img src="../pic/view.png" alt="view">
+						<p>542</p>
+					</div>
+	
+					<div class="comment">
+						<img src="../pic/comment.png" alt="comment">
+						<p>17</p>
+					</div>	
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="image-container">
+					<img src="../img/blog-img-2.png" alt="blog image 2" width="100%">
+					<div class="date">
+						<p class="date-number">14</p>
+						<p class="month">Jan</p>
+					</div>
+				</div>
+
+				<h1 class="h1-after">sed do eiusmod tempor</h1>
+				<p class="p-after">
+					Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<div class="line-after"></div>
+				<div class="ratings">
+					<div class="views">
+						<img src="../pic/view.png" alt="view">
+						<p>992</p>
+					</div>
+	
+					<div class="comment">
+						<img src="../pic/comment.png" alt="comment">
+						<p>42</p>
+					</div>	
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="image-container">
+					<img src="../img/blog-img-3.png" alt="blog image 3" width="100%">
+					<div class="date">
+						<p class="date-number">12</p>
+						<p class="month">Jan</p>
+					</div>
+				</div>
+
+				<h1 class="h1-after">incididunt ut labore et dolore</h1>
+				<p class="p-after">
+					Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<div class="line-after"></div>
+				<div class="ratings">
+					<div class="views">
+						<img src="../pic/view.png" alt="view">
+						<p>1560</p>
+					</div>
+	
+					<div class="comment">
+						<img src="../pic/comment.png" alt="comment">
+						<p>98</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="map">
+	<div class="fade"></div>
+		<div class="map-pin"><img src="../pic/map-pin.png" alt="map pin"></div>
+		<h1 class="h1-first">Open map</h1>
+		<div class="map-line"></div>
+	</div>
+
+<!-- <a name="contact"></a> -->	
+<div id="contact"></div>
+
+
+	<div class="footer">
+		<div class="footer-container clearfix">
+			<div class="section-1">
+				<h1 class="title">MoGo</h1>
+				<p class="paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+
+				<div class="followers">
+					<p class="fifteen">15</p>
+					<p class="rest">followers</p>
+				</div>
+				<div class="followers-line">
+				</div>
+
+				<div class="follow">
+					<p>Follow Us:</p>
+					<img src="../pic/facebook-footer.png" alt="facebook footer">
+					<img src="../pic/twitter-footer.png" alt="twitter footer">
+					<img src="../pic/instagram-footer.png" alt="instagram footer">
+					<img src="../pic/pinterest-footer.png" alt="pinterest footer">
+					<img src="../pic/google-plus-footer.png" alt="google plus footer">
+					<img src="../pic/youtube-footer.png" alt="youtubefooter">
+					<img src="../pic/dribbble-footer.png" alt="dribble footer">
+					<img src="../pic/tumblr-footer.png" alt="tumblr footer">
+				</div>
+
+				<form action="#" class="form">
+					<input type="text" value="Your Email..." class="email">
+					<input type="submit" value="Subscribe" class="subscribe">
+				</form>
+			</div>
+			<div class="section-2">
+				<div class="title-2">blogs</div>
+				<div class="blog-block-container">
+					<img src="../img/footer-blog-img-1.png" alt="blog image 1">
+					<div class="content">
+						<h1>Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+						<p>Jan 9, 2016</p>
+					</div>
+				</div>
+
+				<div class="blog-block-container">
+					<img src="../img/footer-blog-img-2.png" alt="blog image 2">
+					<div class="content">
+						<h1>Consectetur adipiscing elit, sed do eiusmod tempor</h1>
+						<p>Jan 9, 2016</p>
+					</div>
+				</div>
+
+				<div class="blog-block-container">
+					<img src="../img/footer-blog-img-3.png" alt="blog image 3">
+					<div class="content">
+						<h1>sed do eiusmod tempor incididunt ut labore</h1>
+						<p>Jan 9, 2016</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-3">
+				<div class="title-3">instagram</div>
+				<div class="instagram-grid">
+					<img src="../img/instagram-1.png" alt="instagram-1" class="first">
+					<img src="../img/instagram-2.png" alt="instagram-2">
+					<img src="../img/instagram-3.png" alt="instagram-3" class="last">
+					<img src="../img/instagram-4.png" alt="instagram-4" class="first">
+					<img src="../img/instagram-5.png" alt="instagram-5" class="last">
+					<img src="../img/instagram-6.png" alt="instagram-6">
+					<img src="../img/instagram-7.png" alt="instagram-7" class="first">
+					<img src="../img/instagram-8.png" alt="instagram-8">
+					<img src="../img/instagram-9.png" alt="instagram-9" class="last">
+				</div>
+
+				<p class="more">View more photos</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
