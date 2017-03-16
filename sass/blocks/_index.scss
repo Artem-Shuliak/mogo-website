@@ -49,7 +49,7 @@ body.pos-fixed {
 
 
 .header {
-	
+
 
 	.slider-container {
 		background: rgba(0, 0, 0, 0.5);
@@ -394,8 +394,10 @@ body.pos-fixed {
 				height: 3px;
 				background-color: #ffffff;
 				display: inline-block;
-				margin-right: 20px; 
+				margin-right: 5%; 
 				position: relative;
+				cursor: pointer;
+				cursor: hand;
 
 				@keyframes line {
 					from {width: 0%;}
@@ -410,47 +412,55 @@ body.pos-fixed {
 					right: 0;
 					background-color: $pink;
 					width: 0;
+					opacity: 0;
 				}
 			}
 
-			.header-bg-1-btn {
-	
+			.header-bg-1-btn.active {
+		
     			.progress-line {
+    				opacity: 1;
     				animation-name: line;
     				animation-duration: 5s;
-    				animation-delay: 0.5s;
+    				// animation-delay: 0.5s;
     				animation-timing-function: linear;
+    				// animation-iteration-count: infinite;
     			}
 			}
 
-			.header-bg-2-btn {
-				
+			.header-bg-2-btn.active {
+	
     			.progress-line {
-					animation-name: line;
+    				opacity: 1;
+    				animation-name: line;
     				animation-duration: 5s;
-    				animation-delay: 5.5s;
+    				// animation-delay: 0.5s;
     				animation-timing-function: linear;
+    				// animation-iteration-count: infinite;
     			}
 			}
 
-			.header-bg-3-btn {
-				
+			.header-bg-3-btn.active {
+	
     			.progress-line {
-					animation-name: line;
+    				opacity: 1;
+    				animation-name: line;
     				animation-duration: 5s;
-    				animation-delay: 10.5s;
+    				// animation-delay: 0.5s;
     				animation-timing-function: linear;
+    				// animation-iteration-count: infinite;
     			}
 			}
 
-			.header-bg-4-btn {
-				margin-right: 0;
-				
+			.header-bg-4-btn.active {
+	
     			.progress-line {
-					animation-name: line;
+    				opacity: 1;
+    				animation-name: line;
     				animation-duration: 5s;
-    				animation-delay: 15.5s;
+    				// animation-delay: 0.5s;
     				animation-timing-function: linear;
+    				// animation-iteration-count: infinite;
     			}
 			}
 		}
@@ -645,6 +655,10 @@ body.pos-fixed {
 	}
 
 	.grid {
+
+		.row-1 {
+
+		}
 		.container {
 			display: inline-block;
 			margin: 51px 34px;

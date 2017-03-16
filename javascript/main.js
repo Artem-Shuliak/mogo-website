@@ -107,29 +107,23 @@ $(document).ready(init);
 					$('.content-3').toggleClass('open');
 
 					$('.toggle-2').toggleClass('rotate');
-				});	
-
-				$('.header-bg-1-btn').click(function (event) {
-					event.preventDefault();
-					$('.header-bg-1').addClass('top');
 				});
 
-				$('.header-bg-2-btn').click(function (event) {
-					event.preventDefault();
-					$('.header-bg-2').addClass('top');
-				});
 
-				$('.header-bg-3-btn').click(function (event) {
-					event.preventDefault();
-					$('.header-bg-3').addClass('top');
-				});
+				$('.slider-img:first').addClass('top');
 
-				$('.header-bg-4-btn').click(function (event) {
-					event.preventDefault();
-					$('.header-bg-4').addClass('top');
-				});
+				$('.header-bg-3-btn').addClass('active');
 
-				$('.header-bg-1').addClass('top');
+				var progress_bar = function() {
+					var curr_2 = $('.js-slider-btn.active');
+					var next_2 = curr.next();
+
+					next.addClass('active');
+					curr.removeClass('active');
+
+					setInterval(progress, 5000);
+
+				}
 
 				var change = function() {
 					// alert('sample');
@@ -157,5 +151,103 @@ $(document).ready(init);
 
 				}
 
-				setInterval(change, 5000);
+    			var slider_automated = setInterval(change, 5000);
+
+    			$('.header-bg-1-btn').click(function (event){
+					btn_1();
+					clearInterval(slider_automated);
+
+					$('.header-bg-1-btn').removeClass('active');
+					$('.header-bg-2-btn').removeClass('active');
+					$('.header-bg-3-btn').removeClass('active');
+					$('.header-bg-4-btn').removeClass('active');
+
+					$('.header-bg-1').animate({opacity:1.0},200);
+
+				});	
+
+				$('.header-bg-2-btn').click(function (event){
+					btn_2();
+					clearInterval(slider_automated);
+
+					$('.header-bg-1-btn').removeClass('active');
+					$('.header-bg-2-btn').removeClass('active');
+					$('.header-bg-3-btn').removeClass('active');
+					$('.header-bg-4-btn').removeClass('active');
+
+					$('.header-bg-2').animate({opacity:1.0},200);
+				});
+
+				$('.header-bg-3-btn').click(function (event){
+					btn_3();
+					clearInterval(slider_automated);
+
+					$('.header-bg-1-btn').removeClass('active');
+					$('.header-bg-2-btn').removeClass('active');
+					$('.header-bg-3-btn').removeClass('active');
+					$('.header-bg-4-btn').removeClass('active');
+
+					$('.header-bg-3').animate({opacity:1.0},200);
+				});
+
+				$('.header-bg-4-btn').click(function (event){
+					btn_4();
+					clearInterval(slider_automated);
+
+					$('.header-bg-1-btn').removeClass('active');
+					$('.header-bg-2-btn').removeClass('active');
+					$('.header-bg-3-btn').removeClass('active');
+					$('.header-bg-4-btn').removeClass('active');
+
+					$('.header-bg-4').animate({opacity:1.0},200);
+				});
+
+				var btn_1 = function() {
+					$('.header-bg-1').addClass('top');
+					$('.header-bg-2').removeClass('top');
+					$('.header-bg-3').removeClass('top');
+					$('.header-bg-4').removeClass('top');
+
+					$('.header-bg-2').css({opacity:0.0});
+					$('.header-bg-3').css({opacity:0.0});
+					$('.header-bg-4').css({opacity:0.0});
+					$('.header-bg-1').css({opacity:0.0});
+
+				}
+
+				var btn_2 = function() {
+					$('.header-bg-2').addClass('top');
+					$('.header-bg-1').removeClass('top');
+					$('.header-bg-3').removeClass('top');
+					$('.header-bg-4').removeClass('top');
+
+					$('.header-bg-1').css({opacity:0.0});
+					$('.header-bg-3').css({opacity:0.0});
+					$('.header-bg-4').css({opacity:0.0});
+					$('.header-bg-2').css({opacity:0.0});
+				}
+
+				var btn_3 = function() {
+					$('.header-bg-3').addClass('top');
+					$('.header-bg-1').removeClass('top');
+					$('.header-bg-2').removeClass('top');
+					$('.header-bg-4').removeClass('top');
+
+					$('.header-bg-2').css({opacity:0.0});
+					$('.header-bg-4').css({opacity:0.0});
+					$('.header-bg-1').css({opacity:0.0});
+					$('.header-bg-3').css({opacity:0.0});
+				}
+
+				var btn_4 = function() {
+					$('.header-bg-4').addClass('top');
+					$('.header-bg-1').removeClass('top');
+					$('.header-bg-2').removeClass('top');
+					$('.header-bg-3').removeClass('top');
+
+					$('.header-bg-2').css({opacity:0.0});
+					$('.header-bg-3').css({opacity:0.0});
+					$('.header-bg-1').css({opacity:0.0});
+					$('.header-bg-4').css({opacity:0.0});
+				}
 			}		
