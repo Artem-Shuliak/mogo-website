@@ -49,12 +49,14 @@ body.pos-fixed {
 
 
 .header {
-
-
+	overflow: hidden;
 	.slider-container {
 		background: rgba(0, 0, 0, 0.5);
 		position: relative;
 		z-index: 1;
+	}
+
+	.slider-img {
 	}
 	
 	.header-bg-1 {
@@ -421,7 +423,7 @@ body.pos-fixed {
     			.progress-line {
     				opacity: 1;
     				animation-name: line;
-    				animation-duration: 5s;
+    				animation-duration: 4s;
     				// animation-delay: 0.5s;
     				animation-timing-function: linear;
     				// animation-iteration-count: infinite;
@@ -433,7 +435,7 @@ body.pos-fixed {
     			.progress-line {
     				opacity: 1;
     				animation-name: line;
-    				animation-duration: 5s;
+    				animation-duration: 4s;
     				// animation-delay: 0.5s;
     				animation-timing-function: linear;
     				// animation-iteration-count: infinite;
@@ -445,7 +447,7 @@ body.pos-fixed {
     			.progress-line {
     				opacity: 1;
     				animation-name: line;
-    				animation-duration: 5s;
+    				animation-duration: 4s;
     				// animation-delay: 0.5s;
     				animation-timing-function: linear;
     				// animation-iteration-count: infinite;
@@ -457,7 +459,7 @@ body.pos-fixed {
     			.progress-line {
     				opacity: 1;
     				animation-name: line;
-    				animation-duration: 5s;
+    				animation-duration: 4s;
     				// animation-delay: 0.5s;
     				animation-timing-function: linear;
     				// animation-iteration-count: infinite;
