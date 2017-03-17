@@ -114,16 +114,31 @@ $(document).ready(init);
 
 				$('.header-bg-3-btn').addClass('active');
 
-				var progress_bar = function() {
-					var curr_2 = $('.js-slider-btn.active');
-					var next_2 = curr.next();
+				// var progress_bar = function() {
+				// 	var curr_2 = $('.js-slider-btn.active');
+				// 	var next_2 = curr.next();
 
-					next.addClass('active');
-					curr.removeClass('active');
+				// 	next.addClass('active');
+				// 	curr.removeClass('active');
 
-					setInterval(progress, 5000);
+				// 	setInterval(progress, 5000);
 
+				// }
+				setInteval(function () {f()}, 5000);
+
+							var f = function () {
+				var activeBtn = $('.js-slider-btn.is-active');
+				var nextBtn = activeBtn.next();
+			
+				if (!nextBtn) {
+					nextBtn = $('.js-slider-btn').first();
 				}
+			
+				activeBtn.removeClass('is-active');
+				nextBtn.addClass('is-active');
+			
+				
+			}
 
 				var change = function() {
 					// alert('sample');
