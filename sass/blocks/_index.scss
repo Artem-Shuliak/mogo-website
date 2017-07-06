@@ -471,6 +471,7 @@ body.pos-fixed {
 
 .about {
 	text-align: center;
+	background-color: white;
 
 	.about-bg {
 		background-image: url('../img/white-bg.png');
@@ -728,6 +729,7 @@ body.pos-fixed {
 	.devices {
 		text-align: center;
 		position: relative;
+		overflow: hidden;
 
 		.devices-bg {
 			background-image: url('../img/devices-bg.png');
@@ -735,6 +737,8 @@ body.pos-fixed {
 			// height: 850px;
 			background-size: cover;
 			background-repeat: no-repeat;
+			position: relative;
+			overflow: hidden;
 		}
 
 		p:first-of-type {
@@ -762,6 +766,8 @@ body.pos-fixed {
 				display: inline-block;
 				max-width: 477px;
 				margin-top: 45px;
+				position: relative;
+				
 			}
 
 
@@ -770,6 +776,7 @@ body.pos-fixed {
 				top: 50%;
 				left: 75%;
 				width: 50%;
+
 			}
 		}
 	}
